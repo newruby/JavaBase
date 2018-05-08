@@ -11,17 +11,20 @@ package com.ty.com.base.ObjectOriented.inherit;
  */
 public class OverrideTest {
     public static void main(String[] args) {
+        //创建子类对象
         Cat c = new Cat();
+        //调用方法
         c.move();
     }
 }
 
+//父类
 class Animal {
     public void move() {
         System.out.println("动物在移动");
     }
 }
-
+//子类
 class Cat extends Animal {
     @Override
     public void move() {
