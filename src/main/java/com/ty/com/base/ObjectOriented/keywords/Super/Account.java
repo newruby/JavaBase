@@ -9,9 +9,11 @@ public class Account {
 
     //Coustructor
     Account() {
+//      super();
         System.out.println("父类无参数的构造方法");
     }
     Account(String actno, double banlance) {
+//      super();
         this.actno = actno;
         this.banlance = banlance;
     }
