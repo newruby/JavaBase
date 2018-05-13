@@ -1,4 +1,4 @@
-package com.ty.com.base.ObjectOriented.Interface;
+package com.ty.com.base.ObjectOriented.interfaces;
 
 /**
  * created by TY on 2018/5/12.

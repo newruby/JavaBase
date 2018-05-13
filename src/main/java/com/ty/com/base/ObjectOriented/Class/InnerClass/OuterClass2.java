@@ -3,13 +3,13 @@ package com.ty.com.base.ObjectOriented.Class.InnerClass;
 /**
  * created by TY on 2018/5/12.
  */
+
 /**
- * 内部类类内定义类可以访问外部类中私有的数据
- * 静态内部类
+ *成员内部类
  * @param
  * @return
  */
-public class OuterClass1 {
+public class OuterClass2 {
     //静态变量
     private static String s = "neo got my back";
     //成员变量
@@ -22,38 +22,38 @@ public class OuterClass1 {
     private void m2() {
         System.out.println("m2 invoke");
     }
-
     /**
-     *  静态内部类可以用访问控制权限的修饰符
-     *  public protected private 缺省
-     *  静态内部类可以直接访问静态数据  静态变量 静态方法
-     *  无法直接访问成员数据  成员变量 成员方法
+     *成员内部类不能有静态声明
      * @param
      * @return
      */
-
-    static class InnerClass {
+    class InnerClass {
         //静态方法
-        public static void m3() {
+/*        public static void m3() {
             System.out.println(s);
             m1();
-        }
+        }*/
         //成员方法
         public void m4() {
+            //可以访问外部类的所有数据静态成员数据
             System.out.println(s);
+            System.out.println(s2);
             m1();
+            OuterClass2 o = new OuterClass2();
+            o.m2();
         }
     }
     public static void main(String[] args) {
-        OuterClass1.InnerClass.m3();
-
-        InnerClass inner = new InnerClass();
-        inner.m4();
+        //创建外部类的对象
+        OuterClass2 oc = new OuterClass2();
+        //创建内部类的对象
+        InnerClass ic = oc.new InnerClass();
+        ic.m4();
     }
 }
 /*
 neo got my back
+tech tech on my mind
 static 'm1 invoke
-neo got my back
-static 'm1 invoke
+m2 invoke
 */
