@@ -31,7 +31,5 @@ public class CollectionTest4 {
 //          it = c.iterator();
         }
         System.out.println(c.size());
-
-
     }
 }
