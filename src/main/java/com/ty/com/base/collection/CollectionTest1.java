@@ -6,6 +6,11 @@ import java.util.Collection;
 /**
  * created by TY on 2018/5/18.
  */
+/**
+ *  集合中的方法
+ * @param
+ * @return
+ */
 public class CollectionTest1 {
     public static void main(String[] args) {
         //1.创建集合

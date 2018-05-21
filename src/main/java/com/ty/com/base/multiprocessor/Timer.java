@@ -10,9 +10,9 @@ import java.util.TimerTask;
 public class Timer {
     public static void main(String[] args) throws Exception{
 
-        new Timer().schedule(new LogTimerTask(),
+/*        new Timer().schedule(new LogTimerTask(),
                 new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS").parse("2018-5-20 12:13:00 000"),
-                  10*1000);
+                  10*1000);*/
     }
 }
 class LogTimerTask extends TimerTask {

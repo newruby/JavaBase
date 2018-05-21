@@ -8,6 +8,12 @@ import java.util.Collection;
 /**
  * created by TY on 2018/5/18.
  */
+/**
+ * remove 和equals方法都需要集合中的元素重写equals方法
+ * 现实的业务逻辑应该比较内容而不是内存地址
+ * @param
+ * @return
+ */
 public class CollectionTest3 {
     public static void main(String[] args) {
         Collection c = new ArrayList();

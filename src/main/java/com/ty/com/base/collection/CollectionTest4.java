@@ -28,6 +28,7 @@ public class CollectionTest4 {
 //          并不推荐集合自身remove
 //          Object o = it.next();
 //          c.remove(o);
+            // 用集合自身的方法 删了第一个后报错 需要重新获取迭代器再删除
 //          it = c.iterator();
         }
         System.out.println(c.size());
