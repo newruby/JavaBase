@@ -28,6 +28,7 @@ public class Employee {
     //重写hasCode方法
     @Override
     public int hashCode() {
+        //以员工编号分组
         return no.hashCode();
     }
 

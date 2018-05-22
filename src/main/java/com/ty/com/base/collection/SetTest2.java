@@ -4,11 +4,12 @@ package com.ty.com.base.collection;
  * created by TY on 2018/5/21.
  */
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Set;
 
 /**
- *
+ *存储在HashSet集合或者HashMap集合key部分的元素，需要同时重写hashCode、equals方法
  * @param
  * @return
  */
