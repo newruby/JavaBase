@@ -11,7 +11,7 @@ import java.util.TreeSet;
 /**
  * SortedSet集合存储元素为什么可以自动排序
  * Sun提供的程序调用compareTo
- * 所以第一种方法 重写该方法
+ * 所以第一种方法 实现java.lang.Comparable接口 重写compareTo方法
  * @param
  * @return
  */
@@ -49,7 +49,7 @@ class User implements Comparable {
         return "User(age = "+ age + ")";
     }
 
-    //实现java.lang.Comparable接口中得compareTo方法
+    //实现java.lang.Comparable接口中的compareTo方法
     //该方法程序员负责实现
     //编写一个比较规则age排序
     @Override
