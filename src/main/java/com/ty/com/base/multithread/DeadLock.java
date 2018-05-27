@@ -1,4 +1,4 @@
-package com.ty.com.base.multiprocessor;
+package com.ty.com.base.multithread;
 
 /**
  * created by TY on 2018/5/20.

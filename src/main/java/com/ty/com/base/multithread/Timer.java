@@ -1,4 +1,4 @@
-package com.ty.com.base.multiprocessor;
+package com.ty.com.base.multithread;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
