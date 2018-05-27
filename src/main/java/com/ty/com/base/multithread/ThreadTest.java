@@ -7,8 +7,8 @@ public class ThreadTest {
     public static void main(String[] args) throws Exception {
 
 
-        Thread t1 = new Thread(new Processor1());
-        Thread t2 = new Thread(new Processor1());
+        Thread t1 = new Thread(new Processor0());
+        Thread t2 = new Thread(new Processor0());
 
         t1.setName("t1");
         t2.setName("t2");
@@ -21,7 +21,7 @@ public class ThreadTest {
     }
 }
 
-class Processor1 implements Runnable{
+class Processor0 implements Runnable{
     @Override
     public void run() {
         if("t1".equals(Thread.currentThread().getName())) {

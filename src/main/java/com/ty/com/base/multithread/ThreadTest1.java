@@ -13,7 +13,7 @@ package com.ty.com.base.multithread;
 public class ThreadTest1 {
     public static void main(String[] args) {
         //2.创建线程
-        Thread t = new Processor();
+        Thread t = new Processor1();
 
         //3.启动线程 自动调用run
         t.start();
@@ -28,7 +28,7 @@ public class ThreadTest1 {
 }
 
 //1.定义一个线程
-class Processor extends Thread {
+class Processor1 extends Thread {
 
     //重写run方法
     @Override
